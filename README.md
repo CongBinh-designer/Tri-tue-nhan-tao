@@ -32,3 +32,8 @@
 1. **Backtracking Search:** Là một dạng tìm kiếm theo chiều sâu chuyên dụng cho CSP. Thuật toán sẽ thử gán màu cho từng ô bản đồ một, nếu phát hiện một ô vi phạm ràng buộc, nó sẽ quay lui bước trước đó để thử một màu khác.
 2. **Forward Checking:** Là kỹ thuật tối ưu hóa kết hợp Backtracking. Mỗi khi tô một màu, thuật toán sẽ nhìn trước và loại bỏ màu đó khỏi danh sách các màu hợp lệ của các ô lân cận chưa tô. Giúp phát hiện sớm các ngõ cụt và giảm thiểu số lần quay lui.
 3. **Min Conflicts:** Là thuật toán tìm kiếm cục bộ cho CSP. Thuật toán bắt đầu bằng cách gán màu ngẫu nhiên cho toàn bộ bản đồ. Sau đó ở mỗi bước, thuật toán sẽ chọn lại màu cho một ô đang bị vi phạm sao cho số lượng xung đột giảm xuống mức thấp nhất cho đến khi bài toán được giải.
+4. **AC-3 (Arc Consistency):** Thay vì đi tìm lời giải ngay, thuật toán sẽ kiểm tra các cặp biến có ràng buộc với nhau và loại bỏ những giá trị chắc chắn không thể thỏa mãn ràng buộc đó. Trong quá trình này có biến nào bị xóa hết giá trị thì có thể kết luận ngay rằng bài toán vô nghiệm. AC-3 thường được dùng như một bước "dọn đường", giúp giảm số lượng trường hợp cần thử khi tìm kiếm lời giải.
+
+### Công Nghệ Sử Dụng
+**Ngôn ngữ lập trình:** Python
+**Thư viện giao diện:** Tkinter
